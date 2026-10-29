@@ -523,6 +523,26 @@
             <p>Start with a relaxed 60-minute visit. We’ll listen first, answer your questions and plan the next step together.</p>
           </div>
 
+          <!-- Include the official Razorpay Checkout script once in your HTML -->
+          <script src="https://razorpay.com"></script>
+
+<!-- The Appointment Booking Form -->
+          <form id="booking-form" class="booking-form-container">
+            <h3>Book Your Dental Appointment</h3>
+            
+            <label for="patient-name">Full Name</label>
+            <input type="text" id="patient-name" required placeholder="Dr. John Doe">
+          
+            <label for="patient-email">Email Address</label>
+            <input type="email" id="patient-email" required placeholder="john@example.com">
+          
+            <label for="patient-phone">Phone Number</label>
+            <input type="tel" id="patient-phone" required placeholder="9876543210" pattern="[0-9]{10}">
+          
+            <button type="submit" id="pay-btn">Proceed to Payment (₹500)</button>
+          </form>
+
+
           <!--
             Third-party booking integration:
             paste the provider's embed inside #booking-widget-provider, remove its
